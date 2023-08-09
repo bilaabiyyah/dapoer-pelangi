@@ -1,0 +1,722 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 90px;
+  background: #6E3B3B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+body {
+  margin: 30px;
+  align-items: center;
+
+}
+.logo {
+  font-size: 20px;
+  color: whitesmoke;
+  user-select: none;
+  position: relative;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.navigation a:hover {
+  color: #F3CF7A;
+}
+
+.cart-icon {
+  width: 60px;
+  height: 30px;
+  color: white;
+  padding-left: 25px;
+  cursor: pointer;
+  margin-top: -10px;
+  margin-left: -5px;
+  transition: 0.1s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  font-size: 25px;
+  transform: translateY(7px);
+  margin-left: 17px;
+  font-size: 28px;
+}
+
+.cart-icon:hover {
+  color: #F3CF7A;
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 350px;
+  min-height: 100vh;
+  padding: 20px;
+  background: #FFE26F;
+  box-shadow: -2px 0 4px rgb(190, 77, 2);
+  transition: 0.5s;
+
+}
+
+.cart.active {
+  right: 0;
+}
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 10%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cart-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.cart-product-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cart-price {
+  font-weight: 500;
+}
+
+.cart-quantity {
+  border: 1px solid var(--text-color);
+  outline-color: #6E3B3B;
+  width: 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.cart-remove {
+  font-size: 30px;
+  color: #AC3F21;
+  cursor: pointer;
+}
+
+.cart-remove:hover {
+  color: red;
+}
+
+.cart::-webkit-scrollbar {
+  width: 0;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid black;
+}
+
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price {
+  margin-left: 0.5rem;
+}
+
+.btn-co {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: #AC3F21;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.btn-co:hover {
+  background: #080000;
+  color: black;
+}
+
+.close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.close-cart:hover {
+  color: white;
+}
+.navigation .quantity {
+  position: absolute;
+  margin-top: -34px;
+  margin-right: -30px;
+  font-size: 16px;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(325px);
+}
+
+.welcome-page {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  padding-top: 30px;
+  margin-top: 60px;
+  margin-left: -30px;
+  margin-right: -30px;
+  background-color: #F3CF7A;
+  text-align: left;
+  height: 565px;
+}
+
+.welcome-page img {
+  float: right;
+  width: 550px;
+  height: 550px;
+  transform: translateY(-50px);
+}
+
+.welcome-page h1 {
+  font-size: 50px;
+  font-family: "Poppins";
+  margin-left: 50px;
+  transform: translateY(150px);
+  color: #6e3b3b;
+  letter-spacing: 1px;
+  line-height: 60px;
+}
+
+.welcome-page p {
+  transform: translateY(190px);
+  margin-left: 50px;
+  font-size: 20px;
+  margin-top: -30px;
+  color: #354133;
+  
+}
+.card-product {
+  margin-top: 90px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 50px;
+  background-color: #FFE26F;
+  text-align: justify;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.card-product h2 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(114, 43, 10);
+  font-family: "oswald";
+}
+
+.card-kuebasah {
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: transparent;
+  text-align: justify;
+  padding-right: 20px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.card-kuebasah .popup-view {
+  z-index: 2;
+  background: rgba(235, 198, 250, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card-kuebasah .popup-view.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-kuebasah .popup-card {
+  position: relative;
+  transform: translateY(70px);
+  display: flex;
+  width: 700px;
+  height: 400px;
+  margin: 20px;
+}
+
+.card-kuebasah .popup-card .info {
+  z-index: 2;
+  background: rgb(246, 231, 255);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 40px;
+  padding-bottom: 40px;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.card-kuebasah .popup-card .info p {
+  letter-spacing: 0.5px;
+}
+
+.card-kuebasah .popup-card .info h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-kuebasah .popup-card .icon-close {
+  color: rgb(137, 117, 151);
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  padding-top: -25px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.card-kuebasah .popup-card .icon-close:hover {
+  color: #230a44;
+}
+
+.card-text {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: #FFB26B;
+}
+
+.role-name {
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+  font-size: 16px;
+}
+.card-jenis-kue-basah {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  width: 180px;
+  height: 270px;
+  margin: auto;
+  display: inline-block;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-jenis-kue-basah img {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 5px;
+  margin-right: 15px;
+}
+.card-jenis-kue-basah .role-price {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  font-size: small;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.card-jenis-kue-basah .popup-btn {
+  width: 70px;
+  height: 30px;
+  background: #AC3F21;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 150px;
+  margin-top: 13px;
+  margin-left: -13px;
+  transition: 0.1s;
+  text-decoration: none;
+  display: flex;
+  float: right;
+  text-align: center;
+  padding-left: 16px;
+  padding-top: 3px;
+}
+.card-tipe-tampah .popup-btn {
+  width: 80px;
+  height: 30px;
+  background: #AC3F21;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 150px;
+  margin-top: 13px;
+  margin-left: -13px;
+  margin-right: 20px;
+  transition: 0.1s;
+  text-decoration: none;
+  display: flex;
+  float: right;
+  text-align: center;
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.card-jenis-kue-basah .popup-btn:hover {
+  background: #ff5627;
+  color: black;
+}
+
+.card-tipe-tampah .popup-btn:hover {
+  background: #ff5627;
+  color: black;
+
+}
+
+.card-jenis-kue-basah .cart-btn {
+  width: 60px;
+  height: 30px;
+  background: #E5BA73;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 13px;
+  margin-left: -13px;
+  transition: 0.1s;
+  text-decoration: none;
+  display: inline-block;
+  transform: translateX(5%);
+  text-align: center;
+  position: relative;
+  font-family: "Poppins";
+  font-size: 30px;
+}
+
+.card-jenis-kue-basah .cart-btn:hover {
+  background: #583e02;
+  color: white;
+
+}
+.card-tipe-tampah .cart-btn {
+  width: 80px;
+  height: 30px;
+  background: #F3CF7A;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 13px;
+  margin-left: 13px;
+  transition: 0.1s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  font-family: "Poppins";
+  font-size: 30px;
+}
+.card-tipe-tampah .cart-btn:hover {
+  background: #583e02;
+  color: white;
+}
+.card-kue-tampah {
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: transparent;
+  text-align: justify;
+  padding-right: 20px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.card-tipe-tampah {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px 25px;
+  width: 250px;
+  height: 400px;
+  margin: 20px;
+  display: inline-block;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+.card-tipe-tampah img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-kue-tampah .popup-view {
+  z-index: 2;
+  background: rgba(235, 198, 250, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card-kue-tampah .popup-view.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-kue-tampah .popup-card {
+  position: relative;
+  transform: translateY(90px);
+  display: flex;
+  width: 700px;
+  height: 400px;
+  margin: 20px;
+}
+
+.card-kue-tampah .popup-card .info {
+  z-index: 2;
+  background: rgb(246, 231, 255);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: justify;
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  padding: 40px;
+  padding-bottom: 40px;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.card-kue-tampah .popup-card .info p {
+  letter-spacing: 0.5px;
+}
+
+.card-kue-tampah .popup-card .info p li {
+  font-size: 14px;
+  font-weight: 50px;
+}
+
+.card-kue-tampah .popup-card .icon-close {
+  color: rgb(137, 117, 151);
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  padding-top: -25px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.card-kue-tampah .popup-card .icon-close:hover {
+  color: #230a44;
+}
+.card-tipe-tampah .role-name-tampah {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: "Poppins";
+}
+.testimoni{
+  margin-top: 40px;
+  border-radius: 10px;
+  background-color: #F3CF7A;
+  padding-bottom: 30px;
+}
+.testimoni h2 {
+  text-align: center;
+  padding-top: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #6E3B3B;
+}
+.testimoni p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  
+}
+.gallery {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  border-color: #230a44;
+  margin-left: 60px;
+  margin-right: 40px;
+}
+.item img {
+  width: 280px;
+  height: 140px;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+}
+.card-tipe-tampah .role-price {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 7px;
+}
+.card-footer {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 25px;
+  background-color: #BE6A15;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.card-footer h2 {
+  text-align: right;
+  margin-right: 20px;
+  font-family: "Oswald";
+}
+
+.card-footer .profile img {
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+
+.card-footer .profile h6 {
+  font-size: 25px;
+  margin-top: 10px;
+  color: white;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.card-footer .profile p {
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+.card-footer .contact {
+  font-size: 1.5em;
+  color: white;
+  display: grid;
+  float: right;
+  padding-right: 10px;
+  transform: translateY(-141px);
+}
+
+.card-footer .contact .email,
+.whatsapp,
+.instagram {
+  padding-top: 20px;
+  color: white;
+  display: flex;
+  font-size: 1.3em;
+}
+
+.card-footer .contact .email:hover {
+  color: #F3CF7A;
+}
+.card-footer .contact .whatsapp:hover {
+  color: #F3CF7A;
+}
+.card-footer .contact .instagram:hover {
+  color: #F3CF7A;
+}
+
+.card-footer h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}

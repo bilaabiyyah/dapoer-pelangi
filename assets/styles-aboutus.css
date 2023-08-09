@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    background: #6E3B3B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+  }
+  
+  body {
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo {
+    font-size: 20px;
+    color: whitesmoke;
+    user-select: none;
+    position: relative;
+  }
+  
+  .navigation a {
+    position: relative;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  
+  .navigation a:hover {
+    color: #F3CF7A;
+  }
+.card-about {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 50px;
+    padding-top: 10px;
+    margin-top: 90px;
+    background-color: #F3CF7A;
+    text-align: center;
+  }
+  
+  .card-about h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #6E3B3B;
+    font-family: "oswald";
+    margin-top: 10px;
+  }
+  
+  .card-about p {
+    font-family: "Poppins";
+    line-height: 1.8;
+    padding-top: 15px;
+    letter-spacing: 1px;
+  }
+.our-team {
+  margin-top: 30px;
+  background-color: #F3CF7A;
+  border-radius: 10px;
+}
+.our-team h2{
+  text-align: center;
+  color: #6E3B3B;
+  font-family: "oswald";
+  font-size: 35px;
+  padding-top: 20px;
+}
+.our-team .cover {
+  width: 500px;
+  height: 320px;
+  position: absolute;
+  transform: translate(77%, 5%);
+  border-radius: 5px;
+}
+
+.member {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-gap: -3px;
+  margin-top: 370px;
+  text-align: justify;
+  justify-content:end;
+  padding-left: 50px;
+  padding-bottom: 70px;
+}
+.per-member {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.per-member img {
+  height: 170px;
+  width: 170px;
+  justify-content: center;
+  align-items: center;
+}
+.per-member .role {
+  background-color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  transform: translateY(-30px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-footer {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 25px;
+  background-color: #BE6A15;
+  text-align: justify;
+  padding-right: 20px;
+}
+
+.card-footer h2 {
+  text-align: right;
+  margin-right: 20px;
+  font-family: "Oswald";
+}
+
+.card-footer .profile img {
+  width: 150px;
+  height: 150px;
+  float: left;
+}
+
+.card-footer .profile h6 {
+  font-size: 25px;
+  margin-top: 10px;
+  color: white;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.card-footer .profile p {
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+.card-footer .contact {
+  font-size: 1.5em;
+  color: white;
+  display: grid;
+  float: right;
+  padding-right: 10px;
+  transform: translateY(-141px);
+}
+
+.card-footer .contact .email,
+.whatsapp,
+.instagram {
+  padding-top: 20px;
+  color: white;
+  display: flex;
+  font-size: 1.3em;
+  font-weight: 600px;
+}
+
+.card-footer .contact .email:hover {
+  color: #F3CF7A;
+}
+.card-footer .contact .whatsapp:hover {
+  color: #F3CF7A;
+}
+.card-footer .contact .instagram:hover {
+  color: #F3CF7A;
+}
+
+.card-footer h4 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}

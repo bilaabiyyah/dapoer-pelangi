@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    background: #6E3B3B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+body {
+    align-items: center;
+    margin: 30px;
+}
+.logo {
+    font-size: 20px;
+    color: whitesmoke;
+    user-select: none;
+    position: relative;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a:hover {
+    color: #F3CF7A;
+}
+
+.navigation .cart {
+    text-align: right;
+    font-size: 1.2em;
+    position: absolute;
+    right: 50px;
+    color: white;
+}
+
+.navigation .cart:hover {
+    color: rgb(224, 178, 255);
+}
+
+.navigation .quantity {
+    text-align: right;
+    position: absolute;
+    right: 30px;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #AC3F21;
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+
+.form h6 {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(24, 17, 27);
+    padding-top: 0px;
+}
+
+.card-data-diri {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 50px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-top:30px ;
+    margin-right: 10px;
+    margin-left: 40px;
+    background-color: #F3CF7A;
+    text-align: left;
+    width: fit-content;
+}
+
+.card-data-diri h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6E3B3B;
+}
+
+.card-data-diri .input-box {
+    padding-bottom: 10px;
+    display: flex;
+    
+}
+
+.card-data-diri .input-box label {
+    margin-right: -10px;
+    width: 200px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500px;
+}
+
+.card-data-diri .input-box input{
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    border-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 15px;
+    font-size: 15px;
+}
+
+.card-pemesanan {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 50px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-top:-260px ;
+    margin-right: 40px;
+    margin-left: 30px;
+    background-color: #F3CF7A;
+    text-align: left;
+    width: fit-content;
+    float: right;
+}
+.card-pemesanan h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6E3B3B;
+}
+
+.card-pemesanan .input-pemesanan {
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.card-pemesanan .input-pemesanan label {
+    margin-right: -10px;
+    width: 200px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500px;
+}
+
+.card-pemesanan .input-pemesanan input {
+    height: 50px;
+    width: 300px;
+    border-radius: 5px;
+    border-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 35px 0 15px;
+    font-size: 15px;
+}
+
+.detail-pesanan {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 50px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-top:50px ;
+    margin-right: 35px;
+    margin-left: 40px;
+    background-color: #F3CF7A;
+    text-align: left;
+    width:auto;
+}
+
+.detail-pesanan h4{
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6E3B3B;
+}
+
+.checkout {
+    display: flex;
+    margin-left: 1085px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 12px 20px;
+    border: none;
+    background: #AC3F21;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.checkout:hover{
+    background-color: #ffa187;
+    color: black;
+}
+
+.pesanan-content table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.pesanan-content .nama-product {
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.pesanan-content .jumlah-product {
+    text-align: right;
+}
+
+.pesanan-content .total-product {
+    text-align: right;
+}
+.card-footer {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 25px;
+    background-color: #BE6A15;
+    text-align: justify;
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-footer h2 {
+    text-align: right;
+    margin-right: 20px;
+    font-family: "Oswald";
+  }
+  
+  .card-footer .profile img {
+    width: 150px;
+    height: 150px;
+    float: left;
+  }
+  
+  .card-footer .profile h6 {
+    font-size: 25px;
+    margin-top: 10px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  
+  .card-footer .profile p {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    color: white;
+  }
+  .card-footer .contact {
+    font-size: 1.5em;
+    color: white;
+    display: grid;
+    float: right;
+    padding-right: 10px;
+    transform: translateY(-141px);
+  }
+  
+  .card-footer .contact .email,
+  .whatsapp,
+  .instagram {
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    font-size: 1.3em;
+  }
+  
+  .card-footer .contact .email:hover {
+    color: #F3CF7A;
+  }
+  .card-footer .contact .whatsapp:hover {
+    color: #F3CF7A;
+  }
+  .card-footer .contact .instagram:hover {
+    color: #F3CF7A;
+  }
+  
+  .card-footer h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+  }
+  
